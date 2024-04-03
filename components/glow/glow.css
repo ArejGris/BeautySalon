@@ -1,0 +1,33 @@
+.glow{
+    padding: 20px;
+}
+.glow .grid{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+    place-items:left;
+    gap:20px;
+    width: 100%;
+}
+.glow .grid .grid-item{
+    display: flex;
+    align-items: center;
+}
+.grid .grid-item div:nth-child(2){
+    flex: 1;
+    width: 50%;
+}
+.circle1{
+    
+    border:none ;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.circle1 span{
+    color: #dddddd;
+    font-weight: 800;
+}

@@ -1,0 +1,45 @@
+.main{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.main img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    max-height: 600px;
+    order: 1;
+}
+
+.main .the-content{
+    height: 100%;
+    flex:1;
+    order: 2;
+    max-width: 50%;
+    width: 50%;
+    padding: 10px;
+    font-family: "Crimson Text";
+}
+.main .the-content h1{
+  font-weight: 800;
+  font-size: 40px;
+}
+.main .the-content h6{
+font-weight: 200;
+font-size: 30px;
+margin-block-start:8px;
+margin-block-end:9px;
+}
+.main .the-content p{
+    font-size: 20px;
+font-weight: 100;
+}
+@media screen and (max-width:750px){
+    .main img{
+     display: none;
+    } 
+ }

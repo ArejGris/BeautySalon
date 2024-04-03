@@ -1,0 +1,79 @@
+.bot{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    height: 50%;
+    width: 30%;
+    padding: 20px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb( 255, 255, 255)
+      )
+      rgb( 214, 219, 220);
+      
+}
+.bot .container{
+    height: 100%;
+    overflow: scroll;
+}
+.bot .btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 2px 8px rgb(210, 225, 228);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bot #box{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bot .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.bot .close:focus{
+    border-radius: 100%;
+    background-color: black;
+    color: lightgray;
+}
+.form{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    background-color: white;
+    width: 90%;
+
+}
+.form input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+
+}
+.form input:focus{
+    border: none;
+}
+.form button{
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: fit-content;
+
+}
+.msg{
+
+}
+.border{
+    display: flex;
+    align-items: center;
+}

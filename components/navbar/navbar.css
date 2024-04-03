@@ -1,0 +1,115 @@
+.myNav {
+}
+.nav {
+  display: flex;
+  height: fit-content;
+}
+.navbar img {
+  width: 150px;
+  height: 150px;
+  margin: 0px 0px 0px 140px;
+}
+.navbar {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin: 10px 10px 10px auto;
+  padding: 10px;
+  padding-top: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.navbar2 {
+  position: relative;
+  width: 100vw;
+  margin: 0;
+  height: fit-content;
+  background-color: #dddddd;
+}
+.navbar ul {
+  background-color: #dddddd;
+  padding-left: 0px;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 50px;
+  color: black;
+}
+.navbar ul li {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.navbar ul li .expanded-list {
+  top: 50px;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+.navbar ul li.service{
+    display: flex;
+}
+.list {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 20px;
+  list-style: none;
+}
+.list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+.list li:not(.expanded-li) {
+  width: 100%;
+}
+.list li .expanded-li {
+  display: flex;
+  flex-direction: column;
+}
+.expanded-li .service-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list li .icon {
+  padding-left: 20px;
+}
+.icon {
+  color: white;
+  cursor: pointer;
+}
+.navbar ul li {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.expand-icon{
+    cursor: pointer;
+    z-index: 999;
+}
+@media screen and (max-width: 780px) {
+  .navbar img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+  }
+}

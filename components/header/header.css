@@ -1,0 +1,182 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.header .img {
+  background-color: #ddcfd5;
+  height:auto ;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.header .img img {
+  height: 100%;
+}
+.header .container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 10px;
+  place-items: center;
+  overflow: hidden;
+}
+.header .details {
+  position: relative;
+  display: grid;
+  width: 80%;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  place-items: center;
+}
+.header .container .details2 {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1px;
+  place-items: center;
+  place-content: center;
+}
+.header .details .content3 h1,
+.header .details .content4 h1,
+.header .details2 .content5 h1 {
+  font-size: 90px;
+  font-weight: 400;
+  font-family: "Crimson Text";
+  white-space: nowrap;
+  line-height: normal;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.header .details .content1 h4,
+.header .details .content2 h4 {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Crimson Text";
+}
+
+.header .details2 .content5 {
+  text-align: center;
+  place-items: center;
+}
+.header .details2 .content6 {
+  place-content: center;
+  text-align: center;
+}
+.details2 .content6 p {
+  text-align: center;
+  font-family: "Crimson Text";
+  text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.content4 {
+  margin-left: 10%;
+}
+@media screen and (max-width: 1200px) {
+  .content1,
+  .content2,
+  .content3,
+  .content4,
+  .content5,
+  .content6 {
+    scale: 0.8;
+  }
+  .content1 {
+    margin-right: 15px;
+  }
+  .content2 {
+    margin-left: 15px;
+  }
+  .content4 {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .container .details {
+    width: 100%;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 869px) {
+  .header .details .content3 h1,
+  .header .details .content4 h1,
+  .header .details2 .content5 h1 {
+    font-size: 76px;
+  }
+  .header .img img {
+    width: 140%;
+  }
+  .content5 {
+  }
+  .content6 p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 687px) {
+  .header .details .content3 h1,
+  .header .details .content4 h1,
+  .header .details2 .content5 h1 {
+    font-size: 60px;
+  }
+  .content5 {
+  }
+  .content6 p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header .details .content3 h1,
+  .header .details .content4 h1,
+  .header .details2 .content5 h1 {
+    font-size: 50px;
+  }
+  .header .details .content1 h4,
+  .header .details .content2 h4 {
+    font-size: 11px;
+  }
+  .container {
+    margin-bottom: -8px;
+  }
+  .content6 {
+    height: 50%;
+    overflow: hidden;
+  }
+  .content6 p {
+    font-size: 10px;
+  }
+  h1,
+  h4 {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .details .content3 h1,
+  .header .details .content4 h1,
+  .header .details2 .content5 h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .content1,
+  .content2,
+  .content3,
+  .content4,
+  .content5,
+  .content6 {
+    scale: 0.5;
+  }
+}

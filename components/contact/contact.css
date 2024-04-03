@@ -1,0 +1,27 @@
+.grid2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid2 .grid-item2 img{
+width: 100%;
+height: 100%;
+}
+.grid2 .grid-item2.flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid2 .grid-item2.flex2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#dddddd ; 
+}
+.grid2 .grid-item2 button{
+  background-color: #dddddd;
+  width: 50%;
+}
+.grid2 .grid-item2 button:hover{
+    background-color: #ddcfd5;
+}
