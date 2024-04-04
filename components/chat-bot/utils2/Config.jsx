@@ -5,13 +5,13 @@ import WebDevelopment from "./widgets/WebDevelopment";
 import Tools from "./widgets/Tools";
 import WeatherInfo from "./widgets/WeatherInfo";
 
-const botName = "keyur kakadiya";
+const botName = "Beauty Center";
 //congig for chatbot
 const config = {
   botName: botName,
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#5ccc9d",
     },
     chatButton: {
       backgroundColor: "#5ccc9d",

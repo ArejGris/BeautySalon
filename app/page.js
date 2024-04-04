@@ -22,7 +22,7 @@ export default function Home() {
     <Main/>
     <Glow/>
     <Contact/>
-    <ChatBot/>
+   {show&& <ChatBot/>}
     {show&&<MyBot closeBot={showBot}/>}
     {!show&&<FloatBtn showBot={showBot}/>}
     <div className="div" style={{height:'600px'}}></div>

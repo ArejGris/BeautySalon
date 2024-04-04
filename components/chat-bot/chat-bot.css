@@ -1,0 +1,35 @@
+.react-chatbot-kit-chat-container{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #dddddd;
+    width: 30%;
+    padding: 10px;
+}
+.react-chatbot-kit-user-avatar{
+    width: 11px;
+    height: 11px;
+}
+.react-chatbot-kit-chat-bot-message-container{
+    width: fit-content;
+    border-radius: 20px;
+    padding: 20px;
+}
+.react-chatbot-kit-chat-bot-message{
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.react-chatbot-kit-chat-input-form{
+    width: 100%;
+    display: flex;
+}
+.react-chatbot-kit-chat-input{
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;
+}
+.react-chatbot-kit-chat-btn-send{
+    border-radius: 0px 20px 20px 0px;
+    padding: 20px;
+}

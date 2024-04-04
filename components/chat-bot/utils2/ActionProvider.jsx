@@ -1,3 +1,5 @@
+import { frameData } from "framer-motion";
+
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc, createClientMessage) {
     this.createChatBotMessage = createChatBotMessage;
@@ -21,9 +23,7 @@ class ActionProvider {
 
   //simple greeting which return simple message
   Greeting = () => {
-    const message = this.createChatBotMessage(`hii`, {
-      withAvatar: true,
-    });
+    const message = this.createChatBotMessage(`hii`,{withAvatar:false});
     this.addMessageToBotState(message);
   };
 
@@ -32,7 +32,7 @@ class ActionProvider {
     const message = this.createChatBotMessage(
       `we provides this much features`,
       {
-        withAvatar: true,
+        withAvatar: false,
         widget: "Tools",
       }
     );
@@ -44,7 +44,7 @@ class ActionProvider {
     const message = this.createChatBotMessage(
       `enter your city name to know weather if your city`,
       {
-        withAvatar: true,
+        withAvatar: false,
         widget: "WeatherInfo",
       }
     );
@@ -56,7 +56,7 @@ class ActionProvider {
     const message = this.createChatBotMessage(
       `enter your information for generate enrollment no.`,
       {
-        withAvatar: true,
+        withAvatar: false,
         widget: "EnrollmentNo",
       }
     );
@@ -66,7 +66,7 @@ class ActionProvider {
   //display list using help of states array
   WebHandler = () => {
     const messages = this.createChatBotMessage(`cources for web development:`, {
-      withAvatar: true,
+      withAvatar: false,
       widget: "WebDevelopment",
     });
 
@@ -77,7 +77,7 @@ class ActionProvider {
   SoftwareHandler = () => {
     const messages = this.createChatBotMessage(
       `cources for software development:`,
-      { withAvatar: true, widget: "SoftwareDevelopment" }
+      { withAvatar: false, widget: "SoftwareDevelopment" }
     );
     this.addMessageToBotState(messages);
   };
@@ -85,7 +85,7 @@ class ActionProvider {
   //default handler if you not found any mathes
   handleDefault = () => {
     const message = this.createChatBotMessage("How can I help?", {
-      withAvatar: true,
+      withAvatar: false,
       widget: "Tools",
     });
     this.addMessageToBotState(message);
