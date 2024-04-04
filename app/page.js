@@ -12,8 +12,12 @@ import ChatBot from "@/components/chat-bot/ChatBot";
 const Header=dynamic(()=>import('@/components/header/Header'),{ssr:false})
 export default function Home() {
   const [show,setShow]=useState(false)
+  const [show2,setShow2]=useState(false)
   function showBot(){
     setShow(prev=>!prev)
+  }
+  function showBot2(){
+    setShow2(prev=>!prev)
   }
   return (
     <>
@@ -22,9 +26,11 @@ export default function Home() {
     <Main/>
     <Glow/>
     <Contact/>
-   {show&& <ChatBot/>}
-    {show&&<MyBot closeBot={showBot}/>}
-    {!show&&<FloatBtn showBot={showBot}/>}
+   {show&& <ChatBot closeBot={showBot}/>}
+    {show2&&<MyBot closeBot={showBot2}/>}
+    
+    {!show&&<FloatBtn showBot={showBot} style="left"/>}
+    {!show2&&<FloatBtn showBot={showBot2} style="right"/>}
     <div className="div" style={{height:'600px'}}></div>
     </>
   );
