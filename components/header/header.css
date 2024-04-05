@@ -17,7 +17,8 @@
   z-index: -1;
 }
 .header .img img {
-  height: 100%;
+  height: auto;
+  width: 130%;
 }
 .header .container {
   position: absolute;
@@ -178,5 +179,8 @@
   .content5,
   .content6 {
     scale: 0.5;
+  }
+  .container{
+    top:10%
   }
 }

@@ -3,12 +3,14 @@ import Image from "next/image";
 export default function Main() {
   return (
     <div className="main">
+      <div className="img">
       <Image
         src="/philosophy-pic-800x691.png"
         width={1000}
-        height={1600}
+        height={1000}
         className="img"
       />
+        </div>
       <div className="the-content">
         <h1>Philosophy</h1>
         <h6>NATURAL RESULTS WITHOUT OBVIOUS SIGNS OF SURGERY</h6>

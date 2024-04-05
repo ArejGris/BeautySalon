@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@fortawesome/fontawesome": "^1.1.8",
     "@mui/material": "^5.15.15",
     "framer-motion": "^11.0.22",
     "material-symbols": "^0.17.1",

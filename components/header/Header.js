@@ -46,7 +46,7 @@ export default function Header() {
       </div>
     <div className="container"  ref={ref}>
     <div className="details">
-     <DivMotion  initial={variant.near} animate={variant.left} isInView={isView}>
+     <DivMotion  initial={variant.near} animate={variant.left} isInView={isView} duration={1}>
      <motion.div className="content1" >
           <h4>
             SKIN INSTITUE
@@ -55,7 +55,7 @@ export default function Header() {
      </DivMotion>
      
     
-       <DivMotion initial={variant.near} animate={variant.right} isInView={isView}>
+       <DivMotion initial={variant.near} animate={variant.right} isInView={isView} duration={1}>
        <motion.div className="content2" >
           <h4 >
             DERMA CENTER
@@ -64,14 +64,14 @@ export default function Header() {
        </DivMotion>
        
         
-        <DivMotion initial={variant.near} animate={variant.left} isInView={isView}>
+        <DivMotion initial={variant.near} animate={variant.left} isInView={isView} duration={1}>
         <motion.div className="content3" >
           <h1 >
             Expert
           </h1>
         </motion.div>
         </DivMotion>
-        <DivMotion initial={variant.near} animate={variant.right} isInView={isView}>
+        <DivMotion initial={variant.near} animate={variant.right} isInView={isView} duration={1}>
         <motion.div className="content4" >
           <h1 >
             Care For

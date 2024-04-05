@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-export function DivMotion({ children, initial,animate ,isInView}) {
+export function DivMotion({ children, initial,animate ,isInView ,duration,delay}) {
   
   const control = useAnimation();
   useEffect(() => {
@@ -19,7 +19,7 @@ export function DivMotion({ children, initial,animate ,isInView}) {
     <motion.div
       initial={initial}
       animate={control}
-      transition={{duration:1}}
+      transition={{duration:duration,delay:delay}}
       viewport={{amount:.5,once:true}}
     >
      
